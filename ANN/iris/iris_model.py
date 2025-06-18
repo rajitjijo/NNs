@@ -110,3 +110,5 @@ with torch.no_grad():
             correct = correct + 1
 
 print(f"We Got {correct} datapoints correct out of {len(X_test)} datapoints")
+
+torch.save(model, "iris_model.pt")
